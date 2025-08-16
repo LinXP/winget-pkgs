@@ -12,6 +12,7 @@ ReleaseDate: 2025-05-09
 Dependencies:
   PackageDependencies:
   - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+ArchiveBinariesDependOnPath: true
 Installers:
 - Architecture: x64
   InstallerUrl: https://malcat.fr/latest/malcat_win313_lite.zip
