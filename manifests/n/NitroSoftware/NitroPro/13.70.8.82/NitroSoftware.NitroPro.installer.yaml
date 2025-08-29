@@ -1,0 +1,33 @@
+# Created with komac v2.12.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: NitroSoftware.NitroPro
+PackageVersion: 13.70.8.82
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+InstallerSwitches:
+  InstallLocation: APPLICATIONFOLDER="<INSTALLPATH>"
+UpgradeBehavior: install
+FileExtensions:
+- fdf
+- pdf
+- ppdf
+- xfdf
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.EdgeWebView2Runtime
+ProductCode: '{DE8A8127-9903-4BE4-8D05-CBEB0B8177A6}'
+ReleaseDate: 2025-02-20
+AppsAndFeaturesEntries:
+- DisplayName: Nitro Pro
+  ProductCode: '{DE8A8127-9903-4BE4-8D05-CBEB0B8177A6}'
+  UpgradeCode: '{709C6481-3F19-4EDD-A5FF-DDF7F755C563}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles(x86)%\Nitro\Pro\13'
+Installers:
+- Architecture: x86
+  InstallerUrl: https://downloads.gonitro.com/professional_13.70.8.82/en/retail/nitro_pro13_ba_x86.msi
+  InstallerSha256: 7429D02958314FA0F77A48993FEDD9AC3BFFF071C4755464A9D8EB78CBCE7432
+ManifestType: installer
+ManifestVersion: 1.10.0
